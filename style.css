@@ -1,0 +1,38 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #7f00ff, #e100ff);
+  background-size: 200% 200%;
+  animation: gradientMove 6s ease infinite;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Center content vertically stacked */
+.container {
+  display: flex;
+  flex-direction: column;   /* 👈 h1 ke niche baaki text layega */
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* thoda space between lines */
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+  opacity: 0.9;
+}
