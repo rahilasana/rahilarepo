@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dailogbox with tailwindcss</title>
+    <link href="./output.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- fixed to position ko "fixed" rkhta hai mgr "inset-0" page ko stretch krta hai -->
+    <div class="bg-gray-500 fixed inset-0"></div>
+    <div class="fixed inset-0">
+        <!-- without h-f dialogbox center mn ni ata  -->
+        <div class="flex justify-center items-center h-full">
+            <div class="bg-white text-left shadow-xl w-[412px] rounded relative">
+                <div class="p-5">
+                    <div class="flex items-start">
+                      <!-- <img class="w-8" src="image copy 3.png"> -->
+                       <img class="w-8" src="image copy 4.png">
+                    <div class="ml-4">
+                        <h3 class="text-gray-900 font-semibold">Deactivate account</h3>
+                        <div class="m-2">
+                        <p class="text-sm text-gray-500">Are you sure you want to deactivate your account?All
+                            of your data will be permanently removed.this action cannot be 
+                            undone.
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                 <div class="bg-gray-50 flex flex-row-reverse px-2 py-3">
+                <button class="bg-red-600  text-white rounded-md ml-3 hover:bg-red-500 px-3 py-2 font-semibold">Deactivate</button>
+                <button class="bg-white  rounded-md ml-3 hover:bg-gray-50 px-3 py-2 font-semibold shadow-sm ring-1 ring-inset ring-gray-300">Cancel</button>
+            </div>
+
+            </div>
+
+        </div>
+
+    </div>
+   
+
+    
+</body>
+</html>

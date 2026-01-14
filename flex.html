@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>flex with tailwindcss</title>
+    <link href="./output.css" rel="stylesheet" />
+</head>
+<body class="h-screen"> 
+    <!--agr hum full size nahi lyty to "items-center" apply nahi kr skty-->
+    <h1 class="bg-cyan-950 text-2xl text-white flex justify-center">in row form</h1>
+    <div class=
+    "bg-gray-300 
+    size-full
+    flex
+    items-center
+    justify-center">
+        <div class="bg-red-300 size-40"></div>
+        <div class="bg-green-300 size-40"></div>
+        <div class="bg-blue-300 size-40"></div>
+        <div class="bg-yellow-300 size-40"></div>
+    </div>
+    <h1 class="bg-cyan-950 text-2xl text-white flex justify-center">reverse row</h1>
+        <div class=
+    "bg-gray-300 
+    size-full
+    flex
+    flex-row-reverse
+    items-center
+    justify-center">
+        <div class="bg-red-300 size-40"></div>
+        <div class="bg-green-300 size-40"></div>
+        <div class="bg-blue-300 size-40"></div>
+        <div class="bg-yellow-300 size-40"></div>
+    </div>
+    <h1 class="bg-cyan-950 text-2xl text-white flex justify-center">in column</h1>
+        <div class=
+    "bg-gray-300 
+    size-full
+    flex
+    flex-col
+    items-center
+    justify-center">
+        <div class="bg-red-300 size-40"></div>
+        <div class="bg-green-300 size-40"></div>
+        <div class="bg-blue-300 size-40"></div>
+        <div class="bg-yellow-300 size-40"></div>
+    </div>
+   <h1 class="bg-cyan-950 text-2xl text-white flex justify-center">column reverse</h1>
+    <div class=
+    "bg-gray-300 
+    size-full
+    flex
+    flex-col-reverse
+    items-center
+    justify-center"> 
+        <div class="bg-red-300 size-40"></div>
+        <div class="bg-green-300 size-40"></div>
+        <div class="bg-blue-300 size-40"></div>
+        <div class="bg-yellow-300 size-40"></div>
+    </div>
+    <h1 class="bg-cyan-950 text-2xl text-white flex justify-center"> space btween items</h1>
+        <div class=
+    "bg-gray-300 
+    size-full
+    flex
+    items-center
+    justify-between">
+        <div class="bg-red-300 size-40"></div>
+        <div class="bg-green-300 size-40"></div>
+        <div class="bg-blue-300 size-40"></div>
+        <div class="bg-yellow-300 size-40"></div>
+    </div>
+    <h1 class="bg-cyan-950 text-2xl text-white flex justify-center">space around items (in 4 sides)</h1>
+    <div class=
+    "bg-gray-300 
+    size-full
+    flex
+    items-center
+    justify-around">
+        <div class="bg-red-300 size-40"></div>
+        <div class="bg-green-300 size-40"></div>
+        <div class="bg-blue-300 size-40"></div>
+        <div class="bg-yellow-300 size-40"></div>
+    </div>
+    <h1 class="bg-cyan-950 text-2xl text-white flex justify-center">wrap items</h1>
+    <p><h1 class="text-4xl">Question=why we use <b>flex-wrap</b>?</h1>
+       <h2 class="text-3xl"> Answer=if we want our item size will remain fixed 
+        in the case of device screen size change,then
+        we have to use <b>"flex-wrap"</b> ok!.by default gap will appear btween items after
+    wrapping ,then use <b>"content-start"</b> to remove that gap.</h2>
+    </p>
+        <div class=
+    "bg-gray-300 
+    size-full
+    flex
+    sm:flex-col
+    flex-wrap
+    content-start
+    ">
+        <div class="bg-red-300 size-40"></div>
+        <div class="bg-green-300 size-40"></div>
+        <div class="bg-blue-300 size-40"></div>
+        <div class="bg-green-300 size-40"></div>
+        <div class="bg-cyan-300 size-40"></div>
+        <div class="bg-pink-300 size-40"></div>
+        <div class="bg-orange-300 size-40"></div>
+        <div class="bg-amber-700 size-40"></div>
+        <div class="bg-blue-500 size-40"></div>
+        <div class="bg-yellow-300 size-40"></div>
+        <div class="bg-red-300 size-40"></div>
+        <div class="bg-blue-300 size-40"></div>
+        <div class="bg-yellow-300 size-40"></div>
+        <div class="bg-orange-300 size-40"></div>
+        <div class="bg-cyan-950 size-40"></div>
+    </div>
+    <h1><b>Interview Question</b></h1>
+    <h1>Q=How to chage item order for small screen?</h1>
+    <p>
+    <div>Mobile: order-1 → Item 2 comes first</div>
+     Large screen: sm:order-2 → Item 2 becomes second
+    </p>
+ <div class="flex flex-col sm:flex-row">
+  <div class="order-2 sm:order-1 bg-red-300 p-4">Item 1</div>
+  <div class="order-1 sm:order-2 bg-blue-300 p-4">Item 2</div>
+</div>
+
+
+
+
+
+    
+</body>
+</html>
